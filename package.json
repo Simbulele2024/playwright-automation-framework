@@ -1,0 +1,20 @@
+{
+  "name": "playwright-automation-framework",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"npx playwright tes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "dotenv": "^17.2.1",
+    "monocart-reporter": "^2.9.21"
+  },
+  "dependencies": {
+    "playwright": "^1.54.2"
+  }
+}
