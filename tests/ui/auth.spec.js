@@ -14,11 +14,11 @@ users.forEach(({ username, password }) => {
     await page.click('#login-button');
 
     if (username === 'locked_out_user') {
-      // This user should stay on the login page with an error message
+       
       await expect(page).toHaveURL('https://www.saucedemo.com/');
       await expect(page.locator('[data-test="error"]')).toBeVisible();
     } else {
-      // These users should land on /inventory
+      
       await expect(page).toHaveURL(/inventory/);
     }
   });
